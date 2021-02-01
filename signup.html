@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sign up page</title>
+		 
+	
+	<style>
+		Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: cyan;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;  
+ 
+ 
+}  
+button {   
+       background-color: #1015;   
+       width: 20%;  
+        color: black;   
+        padding: 20px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;
+        align-items: center;
+        width: 50%;
+        height: auto;
+        top:50%;
+        bottom: 50%;
+        text-align: left;
+        position: relative; 
+        background-color: lightblue;  
+   }
+	input[type=text],input[type=text],input[type=text],input[type=text],input[type=password], input[type=password]{   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 10px 20px;   
+        display: inline-block;   
+        border: 3px solid green;   
+        box-sizing: border-box;   
+    } 
+
+.button {
+  		font-size: 1em;
+  		border-radius: 8px;
+  		padding: 10px;
+  		border: 1px solid #59B969;
+  		box-shadow: 0 1px 0 0 #60BD49 inset;
+  		@include linear-gradient(#63E651, #42753E);
+  		
+		&:hover {
+  			@include linear-gradient(#51DB1C, #6BA061);
+  		}
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+ 		width:30%;
+        padding: 20px;   
+        background-color: lightblue;
+        display:flex;
+       
+        
+
+    }   
+	</style>
+</head>
+<body>
+	<?php
+	include "connection.php"; 
+	?>
+	<form method="POST" action="">
+		<div class="container">
+			<center> <h1><u> Sign-up Form </u></h1> </center> 
+			<label>Full Name:</label><br/>
+			<input type="text" placeholder="Enter your name" name="fullname" required><br>
+			<label>Address:</label><br/>
+			<input type="text" placeholder="Enter Address" name="address" required><br> 
+			<label>Gender:</label>
+			<input type="radio" name="gender" value="Male">Male
+			<input type="radio" name="gender" value="Female">Female
+			<br/>
+			 <label>Email:</label><br/>
+			<input type="text" placeholder="Enter your email" name="email" required><br>
+			<label>Username:</label><br/>
+			<input type="text" placeholder="Enter Username" name="username" required><br> 
+			<label>Password:</label><br/>
+			<input type="password" placeholder="Enter Password" name="password" required><br>
+			<label>Confirm Password:</label><br/>
+			<input type="password" placeholder="Enter Password" name="cpassword" required><br>
+			<button type="submit">Sign up</button>  
+			<button type="button" class="cancelbtn"> Cancel</button> 
+			<button type="button"><a href="loginpage.html">Registerd User</a></button>
+		</div>	
+	</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+
+<html>
+<link href="login.css" rel="stylesheet" type="text/css" />
+<head>
+	<title>login page</title>
+</head>
+
+<body>
+	   
+    <form name="register" method="POST" action="connect.php">  
+	<div class="container">
+		<center> <h1> Login Form </h1> </center> 
+	<label>Username:</label><br>
+	<input type="text" placeholder="Enter Username" name="username" required><br> 
+	 
+    <label>Password : </label> <br>  
+    <input type="password" placeholder="Enter Password" name="password" required><br>  
+    
+	<button type="submit" name="submit">Login</button> 
+    
+	<button type="submit"><a href="signup.html">Sign up</a></button> <br/> 
+    <input type="checkbox" checked="checked"> Remember me   
+    <button type="button" class="cancelbtn"> Cancel</button>   
+    Forgot <a href="#"> password? </a>  
+	</div>
+
+<span>Thankyou for your cooperation</span>
+
+
+</body>
+</html>
